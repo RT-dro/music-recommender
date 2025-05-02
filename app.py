@@ -26,7 +26,7 @@ def get_recommendations(title, cosine_sim, df):
     music_indices = [i[0] for i in sim_scores]
     return df['title'].iloc[music_indices]
 
-st.title("🎧 RT7 Music Recommender System")
+st.title("🎧 TR7 Music Recommender System 🎵")
 df = load_data()
 cosine_sim = build_recommender(df)
 
